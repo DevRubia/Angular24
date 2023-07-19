@@ -8,11 +8,12 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "apps",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/myAngular-app/",
             "outputPath": "dist/my-angular-app",
             "index": "src/index.html",
             "main": "src/main.ts",

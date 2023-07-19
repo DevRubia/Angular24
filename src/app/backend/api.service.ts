@@ -20,7 +20,8 @@ login(email : string, password : string){
     console.log('User logged in successfully');
     
   }, err => {
-    alert('Something went wrong');
+    alert('chech console for error');
+    console.log('User not registered');
     this.router.navigate(['/login']);
   })
 
@@ -44,5 +45,6 @@ localStorage.removeItem('token');
 this.router.navigate(['/login']);
 console.log('User logged out successfully');
 })}
+
 
 }
